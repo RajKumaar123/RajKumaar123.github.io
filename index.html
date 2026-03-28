@@ -7,22 +7,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
-
         body {
-            background: #f5f7fb;
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: #f4f6fb;
             color: #333;
         }
 
         nav {
             position: fixed;
             width: 100%;
-            background: #111827;
+            background: #0f172a;
             padding: 15px;
             text-align: center;
             z-index: 1000;
@@ -45,7 +40,7 @@
 
         .hero {
             height: 100vh;
-            background: linear-gradient(to right, #111827, #1f2937);
+            background: linear-gradient(to right, #0f172a, #1e293b);
             color: white;
             display: flex;
             align-items: center;
@@ -53,12 +48,6 @@
 
         .hero h1 {
             font-size: 48px;
-        }
-
-        .hero p {
-            margin-top: 20px;
-            font-size: 18px;
-            max-width: 700px;
         }
 
         .button {
@@ -74,16 +63,6 @@
         .section-title {
             font-size: 32px;
             margin-bottom: 30px;
-            color: #111827;
-        }
-
-        .skills span {
-            display: inline-block;
-            background: #e5e7eb;
-            padding: 8px 14px;
-            margin: 6px;
-            border-radius: 6px;
-            font-size: 14px;
         }
 
         .card {
@@ -94,10 +73,24 @@
             box-shadow: 0 5px 15px rgba(0,0,0,0.08);
         }
 
+        .skills span {
+            display: inline-block;
+            background: #e2e8f0;
+            padding: 8px 14px;
+            margin: 6px;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        .timeline {
+            border-left: 3px solid #2563eb;
+            padding-left: 20px;
+        }
+
         footer {
             text-align: center;
             padding: 20px;
-            background: #111827;
+            background: #0f172a;
             color: white;
         }
     </style>
@@ -108,6 +101,7 @@
 <nav>
     <a href="#home">Home</a>
     <a href="#about">About</a>
+    <a href="#experience">Experience</a>
     <a href="#skills">Skills</a>
     <a href="#projects">Projects</a>
     <a href="#research">Research</a>
@@ -121,7 +115,8 @@
         <h1>Raj Kumar</h1>
         <p>AI/ML Developer | Engineering Manager | Generative AI | NLP | Computer Vision | RAG | XAI | Azure ML</p>
         <p>
-            Experienced AI/ML Developer & Engineering Manager with 15+ years in BFSI and 6+ years building enterprise AI/ML systems including LLMs, Generative AI, NLP, Computer Vision, and RAG-based applications.
+            Experienced AI/ML Developer & Engineering Manager with 15+ years in BFSI and 6+ years building enterprise AI/ML systems,
+            including LLMs, Generative AI, NLP, Computer Vision, and RAG-based intelligent systems.
         </p>
 
         <a class="button" href="https://www.linkedin.com/in/rajkumaar123/">LinkedIn</a>
@@ -134,12 +129,36 @@
     <h2 class="section-title">About Me</h2>
     <div class="card">
         <p>
-            Experienced AI/ML Developer & Engineering Manager with strong experience in Banking and Financial Services.
-            Specialized in Machine Learning, Deep Learning, NLP, Generative AI, Computer Vision, and scalable AI deployment.
-            Worked with global banking clients including Lloyds, Halifax, BOS, TSB, and NatWest.
-            Built enterprise AI solutions including RAG systems, chatbots, forecasting models, OCR automation,
-            anomaly detection dashboards, and multilingual NLP systems including Angika GPT.
+            AI/ML Developer and Engineering Manager with strong experience in Banking and Financial Services.
+            Specialized in Machine Learning, Deep Learning, NLP, Generative AI, Computer Vision, and enterprise AI deployment.
+            Built RAG systems, forecasting models, OCR automation, anomaly detection dashboards, multilingual NLP systems,
+            and enterprise AI chatbots. Worked onsite in London for UK banking clients and led global AI teams.
         </p>
+    </div>
+</section>
+
+<section id="experience">
+    <h2 class="section-title">Experience</h2>
+    <div class="timeline">
+
+        <div class="card">
+            <h3>Engineering Manager – AI/ML | Cognizant</h3>
+            <p>Leading AI/ML solutions for Banking & Financial Services clients including Lloyds, Halifax, BOS, TSB, and NatWest.</p>
+            <ul>
+                <li>Built enterprise ML and Generative AI systems</li>
+                <li>Developed RAG document chatbots and NLP systems</li>
+                <li>Designed forecasting and risk prediction models</li>
+                <li>Built OCR automation systems for finance</li>
+                <li>Developed anomaly monitoring dashboards</li>
+                <li>Led global agile teams and mentored engineers</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Onsite Lead – London Banking Projects (2018–2021)</h3>
+            <p>Led UK banking analytics and AI initiatives with cross-functional teams.</p>
+        </div>
+
     </div>
 </section>
 
@@ -164,7 +183,6 @@
         <span>LSTM</span>
         <span>Flask</span>
         <span>FastAPI</span>
-        <span>Streamlit</span>
         <span>Azure</span>
         <span>Azure Machine Learning</span>
         <span>Claude</span>
@@ -178,21 +196,28 @@
     <h2 class="section-title">Projects</h2>
 
     <div class="card">
-        <h3>RoadRadar Speed Detection System</h3>
-        <p>Computer vision system for vehicle speed detection using OpenCV and YOLO.</p>
-        <a href="https://github.com/RajKumaar123/RoadRadar-Real-Time-Speed-Detection-System">GitHub Link</a>
+        <h3>RoadRadar – Real-Time Speed Detection</h3>
+        <p>Computer vision system using YOLO and OpenCV for vehicle speed detection and traffic monitoring.</p>
     </div>
 
     <div class="card">
-        <h3>SmartLendXAI Lending Decision System</h3>
+        <h3>SmartLendXAI – Lending Decision System</h3>
         <p>Explainable AI system for lending decisions and credit risk prediction.</p>
-        <a href="https://github.com/RajKumaar123/SmartLendXAI-AI-Powered-Lending-Decisions-for-Early-Stage-Retailers">GitHub Link</a>
     </div>
 
     <div class="card">
-        <h3>Angika Low Resource Translator</h3>
-        <p>NLP system for low-resource language translation and content generation.</p>
-        <a href="https://github.com/RajKumaar123/Angika-LowResource-Translator">GitHub Link</a>
+        <h3>Angika GPT – Low Resource Language Model</h3>
+        <p>Custom NLP model for translation and content generation in Angika language.</p>
+    </div>
+
+    <div class="card">
+        <h3>Invoice Query Assistant (RAG + LangChain)</h3>
+        <p>Document question-answering system using Retrieval-Augmented Generation.</p>
+    </div>
+
+    <div class="card">
+        <h3>OCR Automation for Finance</h3>
+        <p>Deep learning OCR system for invoice and cheque processing.</p>
     </div>
 
 </section>
@@ -201,9 +226,9 @@
     <h2 class="section-title">Research & Publications</h2>
     <div class="card">
         <p>Explainable Sentiment Analysis – ICIEM 2023</p>
-        <p>NMT for Endangered Languages – IIT Patna 2023</p>
-        <p>Generative AI for Drug Recommendations – IIT Kharagpur 2024</p>
-        <p>LLMs & DPT Models – NIT Patna 2024</p>
+        <p>NMT for Endangered Languages – IIT Patna</p>
+        <p>Generative AI for Drug Recommendations – IIT Kharagpur</p>
+        <p>LLMs & DPT Models – NIT Patna</p>
         <p>Facial Image Encryption with DCGANs – IIT Jodhpur</p>
     </div>
 </section>
@@ -221,7 +246,7 @@
     <div class="card">
         <p><b>M.Tech – Data & Computational Science</b> – IIT Jodhpur</p>
         <p><b>B.Tech – Computer Science</b> – Rajasthan Technical University</p>
-        <p><b>Certification:</b> SAFe Scrum Master</p>
+        <p><b>SAFe Scrum Master Certification</b></p>
     </div>
 </section>
 
