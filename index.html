@@ -3,1766 +3,241 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Raj Kumar | AI/ML Developer & Engineering Manager | IIT Jodhpur</title>
-    <meta name="description" content="AI/ML Developer with 15+ years in BFSI. Specializing in LLMs, fraud detection, computer vision, and explainable AI for banking.">
-    
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=IBM+Plex+Mono:wght@400;500;600&family=Public+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
+    <title>Raj Kumar | AI/ML Engineer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-        }
-
-        :root {
-            --primary: #1a1a1a;
-            --secondary: #4a4a4a;
-            --accent: #2563eb;
-            --accent-light: #3b82f6;
-            --bg: #fafafa;
-            --bg-card: #ffffff;
-            --border: #e5e5e5;
-            --text: #1a1a1a;
-            --text-light: #6b6b6b;
-            
-            --font-display: 'Fraunces', serif;
-            --font-body: 'Public Sans', sans-serif;
-            --font-mono: 'IBM Plex Mono', monospace;
+            font-family: 'Poppins', sans-serif;
         }
 
         body {
-            font-family: var(--font-body);
-            color: var(--text);
-            background: var(--bg);
-            line-height: 1.6;
-            overflow-x: hidden;
+            background: #f5f7fb;
+            color: #333;
         }
 
-        /* Navigation */
         nav {
             position: fixed;
-            top: 0;
             width: 100%;
-            background: rgba(250, 250, 250, 0.95);
-            backdrop-filter: blur(10px);
-            border-bottom: 1px solid var(--border);
+            background: #111827;
+            padding: 15px;
+            text-align: center;
             z-index: 1000;
-            animation: slideDown 0.6s ease;
-        }
-
-        @keyframes slideDown {
-            from {
-                transform: translateY(-100%);
-                opacity: 0;
-            }
-            to {
-                transform: translateY(0);
-                opacity: 1;
-            }
-        }
-
-        nav .container {
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 1.5rem 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-family: var(--font-mono);
-            font-weight: 600;
-            font-size: 0.9rem;
-            letter-spacing: -0.02em;
-            color: var(--primary);
-        }
-
-        nav ul {
-            display: flex;
-            gap: 2.5rem;
-            list-style: none;
         }
 
         nav a {
-            color: var(--secondary);
+            color: white;
+            margin: 15px;
             text-decoration: none;
-            font-size: 0.9rem;
             font-weight: 500;
-            transition: color 0.3s ease;
-            position: relative;
         }
 
         nav a:hover {
-            color: var(--accent);
+            color: #60a5fa;
         }
 
-        nav a::after {
-            content: '';
-            position: absolute;
-            bottom: -4px;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: var(--accent);
-            transition: width 0.3s ease;
-        }
-
-        nav a:hover::after {
-            width: 100%;
-        }
-
-        /* Hero Section */
-        .hero {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            padding: 8rem 2rem 4rem;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 50%;
-            height: 100%;
-            background: linear-gradient(135deg, rgba(37, 99, 235, 0.03) 0%, rgba(37, 99, 235, 0.08) 100%);
-            z-index: -1;
-        }
-
-        .hero .container {
-            max-width: 1400px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: 1.2fr 1fr;
-            gap: 6rem;
-            align-items: center;
-        }
-
-        .hero-content h1 {
-            font-family: var(--font-display);
-            font-size: 4rem;
-            line-height: 1.1;
-            font-weight: 700;
-            margin-bottom: 1.5rem;
-            letter-spacing: -0.02em;
-            animation: fadeInUp 0.8s ease 0.2s both;
-        }
-
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .hero-content .subtitle {
-            font-size: 1.3rem;
-            color: var(--secondary);
-            margin-bottom: 1rem;
-            font-weight: 400;
-            animation: fadeInUp 0.8s ease 0.3s both;
-        }
-
-        .hero-content .tagline {
-            font-size: 1.05rem;
-            color: var(--text-light);
-            margin-bottom: 2.5rem;
-            max-width: 600px;
-            line-height: 1.7;
-            animation: fadeInUp 0.8s ease 0.4s both;
-            font-style: italic;
-        }
-
-        .stats {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 2rem;
-            margin-top: 3rem;
-            animation: fadeInUp 0.8s ease 0.5s both;
-        }
-
-        .stat {
-            border-left: 3px solid var(--accent);
-            padding-left: 1rem;
-        }
-
-        .stat-number {
-            font-family: var(--font-mono);
-            font-size: 2.5rem;
-            font-weight: 600;
-            color: var(--accent);
-            line-height: 1;
-            margin-bottom: 0.5rem;
-        }
-
-        .stat-label {
-            font-size: 0.9rem;
-            color: var(--text-light);
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            font-weight: 500;
-        }
-
-        .cta-buttons {
-            display: flex;
-            gap: 1rem;
-            margin-top: 2.5rem;
-            animation: fadeInUp 0.8s ease 0.6s both;
-        }
-
-        .btn {
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 0.95rem;
-            transition: all 0.3s ease;
-            display: inline-block;
-        }
-
-        .btn-primary {
-            background: var(--accent);
-            color: white;
-            border: 2px solid var(--accent);
-        }
-
-        .btn-primary:hover {
-            background: var(--accent-light);
-            transform: translateY(-2px);
-            box-shadow: 0 10px 25px rgba(37, 99, 235, 0.3);
-        }
-
-        .btn-secondary {
-            background: transparent;
-            color: var(--accent);
-            border: 2px solid var(--accent);
-        }
-
-        .btn-secondary:hover {
-            background: var(--accent);
-            color: white;
-            transform: translateY(-2px);
-        }
-
-        .hero-visual {
-            position: relative;
-            animation: fadeIn 1s ease 0.7s both;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-
-        .skill-badges {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.75rem;
-        }
-
-        .badge {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            padding: 0.6rem 1.2rem;
-            border-radius: 30px;
-            font-size: 0.85rem;
-            font-weight: 500;
-            color: var(--secondary);
-            transition: all 0.3s ease;
-        }
-
-        .badge:hover {
-            border-color: var(--accent);
-            color: var(--accent);
-            transform: translateY(-2px);
-        }
-
-        /* Section Styling */
         section {
-            padding: 6rem 2rem;
-            max-width: 1400px;
-            margin: 0 auto;
+            padding: 80px 10%;
         }
 
-        .section-header {
-            margin-bottom: 4rem;
+        .hero {
+            height: 100vh;
+            background: linear-gradient(to right, #111827, #1f2937);
+            color: white;
+            display: flex;
+            align-items: center;
         }
 
-        .section-label {
-            font-family: var(--font-mono);
-            font-size: 0.85rem;
-            color: var(--accent);
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            margin-bottom: 0.75rem;
-            font-weight: 600;
+        .hero h1 {
+            font-size: 48px;
+        }
+
+        .hero p {
+            margin-top: 20px;
+            font-size: 18px;
+            max-width: 700px;
+        }
+
+        .button {
+            display: inline-block;
+            background: #2563eb;
+            color: white;
+            padding: 10px 20px;
+            margin-top: 20px;
+            text-decoration: none;
+            border-radius: 6px;
         }
 
         .section-title {
-            font-family: var(--font-display);
-            font-size: 3rem;
-            font-weight: 700;
-            color: var(--primary);
-            line-height: 1.2;
-            letter-spacing: -0.02em;
+            font-size: 32px;
+            margin-bottom: 30px;
+            color: #111827;
         }
 
-        .section-description {
-            font-size: 1.1rem;
-            color: var(--text-light);
-            max-width: 700px;
-            margin-top: 1rem;
-            line-height: 1.7;
-        }
-
-        /* Experience Timeline */
-        .timeline {
-            position: relative;
-            padding-left: 3rem;
-            margin-top: 3rem;
-        }
-
-        .timeline::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 0;
-            bottom: 0;
-            width: 2px;
-            background: var(--border);
-        }
-
-        .timeline-item {
-            position: relative;
-            margin-bottom: 4rem;
-            padding-left: 2rem;
-        }
-
-        .timeline-item::before {
-            content: '';
-            position: absolute;
-            left: -3rem;
-            top: 0.5rem;
-            width: 12px;
-            height: 12px;
-            background: var(--accent);
-            border-radius: 50%;
-            border: 3px solid var(--bg);
-        }
-
-        .timeline-date {
-            font-family: var(--font-mono);
-            font-size: 0.85rem;
-            color: var(--accent);
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-        }
-
-        .timeline-company {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--primary);
-            margin-bottom: 0.25rem;
-        }
-
-        .timeline-role {
-            font-size: 1.1rem;
-            color: var(--secondary);
-            margin-bottom: 1rem;
-            font-weight: 500;
-        }
-
-        .timeline-description {
-            color: var(--text-light);
-            line-height: 1.7;
-            margin-bottom: 1rem;
-        }
-
-        .timeline-highlights {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-            margin-top: 1rem;
-        }
-
-        .highlight-tag {
-            background: rgba(37, 99, 235, 0.1);
-            color: var(--accent);
-            padding: 0.4rem 0.9rem;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            font-weight: 500;
-        }
-
-        /* Projects Grid */
-        .projects-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-
-        .project-card {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            overflow: hidden;
-            transition: all 0.3s ease;
-            position: relative;
-        }
-
-        .project-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-            border-color: var(--accent);
-        }
-
-        .project-header {
-            padding: 2rem;
-            border-bottom: 1px solid var(--border);
-        }
-
-        .project-category {
-            font-family: var(--font-mono);
-            font-size: 0.75rem;
-            color: var(--accent);
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            margin-bottom: 0.75rem;
-            font-weight: 600;
-        }
-
-        .project-title {
-            font-size: 1.4rem;
-            font-weight: 700;
-            color: var(--primary);
-            margin-bottom: 0.75rem;
-        }
-
-        .project-description {
-            color: var(--text-light);
-            line-height: 1.6;
-            font-size: 0.95rem;
-        }
-
-        .project-body {
-            padding: 2rem;
-        }
-
-        .project-tech {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .tech-tag {
-            background: var(--bg);
-            padding: 0.4rem 0.8rem;
+        .skills span {
+            display: inline-block;
+            background: #e5e7eb;
+            padding: 8px 14px;
+            margin: 6px;
             border-radius: 6px;
-            font-size: 0.8rem;
-            color: var(--secondary);
-            font-family: var(--font-mono);
+            font-size: 14px;
         }
 
-        .project-link {
-            color: var(--accent);
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 0.9rem;
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            transition: color 0.3s ease;
+        .card {
+            background: white;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
         }
 
-        .project-link:hover {
-            color: var(--accent-light);
-        }
-
-        /* Skills Section */
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-
-        .skill-category {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 2rem;
-            transition: all 0.3s ease;
-        }
-
-        .skill-category:hover {
-            border-color: var(--accent);
-            transform: translateY(-3px);
-        }
-
-        .skill-category-title {
-            font-size: 1.3rem;
-            font-weight: 700;
-            color: var(--primary);
-            margin-bottom: 1.5rem;
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-        }
-
-        .skill-icon {
-            width: 32px;
-            height: 32px;
-            background: rgba(37, 99, 235, 0.1);
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--accent);
-            font-weight: 700;
-        }
-
-        .skill-list {
-            display: flex;
-            flex-direction: column;
-            gap: 0.75rem;
-        }
-
-        .skill-item {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0.75rem 0;
-            border-bottom: 1px solid var(--border);
-        }
-
-        .skill-item:last-child {
-            border-bottom: none;
-        }
-
-        .skill-name {
-            font-weight: 500;
-            color: var(--secondary);
-        }
-
-        .skill-level {
-            font-family: var(--font-mono);
-            font-size: 0.75rem;
-            color: var(--accent);
-            font-weight: 600;
-        }
-
-        /* Medium Articles */
-        .medium-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-
-        .medium-card {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 2rem;
-            transition: all 0.3s ease;
-        }
-
-        .medium-card:hover {
-            border-color: var(--accent);
-            transform: translateY(-3px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-        }
-
-        .medium-title {
-            font-size: 1.3rem;
-            font-weight: 700;
-            color: var(--primary);
-            margin-bottom: 0.75rem;
-            line-height: 1.3;
-        }
-
-        .medium-meta {
-            color: var(--text-light);
-            font-size: 0.85rem;
-            margin-bottom: 1rem;
-            font-family: var(--font-mono);
-        }
-
-        .medium-description {
-            color: var(--secondary);
-            line-height: 1.6;
-            margin-bottom: 1.5rem;
-            font-size: 0.95rem;
-        }
-
-        .medium-link {
-            color: var(--accent);
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 0.9rem;
-            transition: color 0.3s ease;
-        }
-
-        .medium-link:hover {
-            color: var(--accent-light);
-        }
-
-        /* Research Papers */
-        .research-list {
-            margin-top: 3rem;
-        }
-
-        .research-item {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 2rem;
-            margin-bottom: 1.5rem;
-            transition: all 0.3s ease;
-        }
-
-        .research-item:hover {
-            border-color: var(--accent);
-            transform: translateX(5px);
-        }
-
-        .research-title {
-            font-size: 1.2rem;
-            font-weight: 700;
-            color: var(--primary);
-            margin-bottom: 0.5rem;
-        }
-
-        .research-meta {
-            color: var(--text-light);
-            font-size: 0.9rem;
-            margin-bottom: 0.75rem;
-        }
-
-        .research-description {
-            color: var(--secondary);
-            line-height: 1.6;
-        }
-
-        /* Contact Section */
-        .contact-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 4rem;
-            margin-top: 3rem;
-        }
-
-        .contact-info h3 {
-            font-size: 1.5rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-            color: var(--primary);
-        }
-
-        .contact-info p {
-            color: var(--text-light);
-            line-height: 1.7;
-            margin-bottom: 2rem;
-        }
-
-        .contact-links {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-        }
-
-        .contact-item {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            padding: 1rem;
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: 8px;
-            transition: all 0.3s ease;
-            text-decoration: none;
-            color: var(--secondary);
-        }
-
-        .contact-item:hover {
-            border-color: var(--accent);
-            transform: translateX(5px);
-        }
-
-        .contact-icon {
-            width: 40px;
-            height: 40px;
-            background: rgba(37, 99, 235, 0.1);
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--accent);
-            font-weight: 700;
-        }
-
-        /* Education Section */
-        .education-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-
-        .education-card {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 2rem;
-            transition: all 0.3s ease;
-        }
-
-        .education-card:hover {
-            border-color: var(--accent);
-            transform: translateY(-3px);
-        }
-
-        .education-degree {
-            font-size: 1.3rem;
-            font-weight: 700;
-            color: var(--primary);
-            margin-bottom: 0.5rem;
-        }
-
-        .education-institution {
-            font-size: 1.1rem;
-            color: var(--accent);
-            margin-bottom: 0.75rem;
-            font-weight: 600;
-        }
-
-        .education-year {
-            font-family: var(--font-mono);
-            font-size: 0.85rem;
-            color: var(--text-light);
-            margin-bottom: 0.5rem;
-        }
-
-        .education-grade {
-            font-size: 0.9rem;
-            color: var(--secondary);
-        }
-
-        /* Footer */
         footer {
-            background: var(--primary);
-            color: white;
-            padding: 3rem 2rem;
             text-align: center;
-        }
-
-        footer p {
-            opacity: 0.8;
-            font-size: 0.9rem;
-        }
-
-        /* Responsive */
-        @media (max-width: 1024px) {
-            .hero .container {
-                grid-template-columns: 1fr;
-                gap: 3rem;
-            }
-
-            .hero-content h1 {
-                font-size: 3rem;
-            }
-
-            .stats {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .contact-content {
-                grid-template-columns: 1fr;
-                gap: 2rem;
-            }
-        }
-
-        @media (max-width: 768px) {
-            nav .container {
-                flex-direction: column;
-                gap: 1rem;
-            }
-
-            nav ul {
-                gap: 1.5rem;
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-
-            .hero-content h1 {
-                font-size: 2.5rem;
-            }
-
-            .section-title {
-                font-size: 2rem;
-            }
-
-            .stats {
-                grid-template-columns: 1fr;
-            }
-
-            .projects-grid,
-            .medium-grid,
-            .education-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .skills-grid {
-                grid-template-columns: 1fr;
-            }
+            padding: 20px;
+            background: #111827;
+            color: white;
         }
     </style>
 </head>
+
 <body>
-    <!-- Navigation -->
-    <nav>
-        <div class="container">
-            <div class="logo">RAJ KUMAR</div>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#medium">Medium Articles</a></li>
-                <li><a href="#research">Research</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>AI is about accessibility, ethics, and trust-driven innovation.</h1>
-                <p class="subtitle">AI/ML Developer & Engineering Manager | M.Tech IIT Jodhpur</p>
-                <p class="tagline">
-                    "Building inclusive AI systems through multilingual NLP, explainable models, and scalable enterprise solutions 
-                    for banking and financial services."
-                </p>
-                
-                <div class="stats">
-                    <div class="stat">
-                        <div class="stat-number">15+</div>
-                        <div class="stat-label">Years Experience</div>
-                    </div>
-                    <div class="stat">
-                        <div class="stat-number">6+</div>
-                        <div class="stat-label">Years in AI/ML</div>
-                    </div>
-                    <div class="stat">
-                        <div class="stat-number">7.74</div>
-                        <div class="stat-label">CGPA @ IIT Jodhpur</div>
-                    </div>
-                </div>
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#research">Research</a>
+    <a href="#medium">Medium</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+</nav>
 
-                <div class="cta-buttons">
-                    <a href="#contact" class="btn btn-primary">Get in Touch</a>
-                    <a href="#projects" class="btn btn-secondary">View Projects</a>
-                </div>
-            </div>
+<section class="hero" id="home">
+    <div>
+        <h1>Raj Kumar</h1>
+        <p>AI/ML Developer | Engineering Manager | Generative AI | NLP | Computer Vision | RAG | XAI | Azure ML</p>
+        <p>
+            Experienced AI/ML Developer & Engineering Manager with 15+ years in BFSI and 6+ years building enterprise AI/ML systems including LLMs, Generative AI, NLP, Computer Vision, and RAG-based applications.
+        </p>
 
-            <div class="hero-visual">
-                <div class="skill-badges">
-                    <div class="badge">LLMs & Gen AI</div>
-                    <div class="badge">RAG Systems</div>
-                    <div class="badge">Computer Vision</div>
-                    <div class="badge">Banking ML</div>
-                    <div class="badge">Explainable AI</div>
-                    <div class="badge">NLP</div>
-                    <div class="badge">Deep Learning</div>
-                    <div class="badge">Fraud Detection</div>
-                    <div class="badge">Azure ML</div>
-                    <div class="badge">Claude AI</div>
-                </div>
-            </div>
-        </div>
-    </section>
+        <a class="button" href="https://www.linkedin.com/in/rajkumaar123/">LinkedIn</a>
+        <a class="button" href="https://github.com/RajKumaar123">GitHub</a>
+        <a class="button" href="https://medium.com/@er.rajkumaar">Medium</a>
+    </div>
+</section>
 
-    <!-- About Section -->
-    <section id="about">
-        <div class="section-header">
-            <div class="section-label">About Me</div>
-            <h2 class="section-title">15+ Years Building AI for Banking & Finance</h2>
-            <p class="section-description">
-                AI/ML Developer and Engineering Manager with deep expertise in BFSI domain. From leading onsite teams 
-                in London for UK banks to building low-resource language models at IIT Jodhpur—I combine technical depth 
-                with real-world delivery experience.
-            </p>
-        </div>
-    </section>
+<section id="about">
+    <h2 class="section-title">About Me</h2>
+    <div class="card">
+        <p>
+            Experienced AI/ML Developer & Engineering Manager with strong experience in Banking and Financial Services.
+            Specialized in Machine Learning, Deep Learning, NLP, Generative AI, Computer Vision, and scalable AI deployment.
+            Worked with global banking clients including Lloyds, Halifax, BOS, TSB, and NatWest.
+            Built enterprise AI solutions including RAG systems, chatbots, forecasting models, OCR automation,
+            anomaly detection dashboards, and multilingual NLP systems including Angika GPT.
+        </p>
+    </div>
+</section>
 
-    <!-- Experience Section -->
-    <section id="experience">
-        <div class="section-header">
-            <div class="section-label">Professional Journey</div>
-            <h2 class="section-title">Experience</h2>
-        </div>
+<section id="skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills">
+        <span>Python</span>
+        <span>SQL</span>
+        <span>Machine Learning</span>
+        <span>Deep Learning</span>
+        <span>NLP</span>
+        <span>Generative AI</span>
+        <span>LLMs</span>
+        <span>LangChain</span>
+        <span>RAG</span>
+        <span>Computer Vision</span>
+        <span>OpenCV</span>
+        <span>YOLO</span>
+        <span>PyTorch</span>
+        <span>Scikit-learn</span>
+        <span>XGBoost</span>
+        <span>LSTM</span>
+        <span>Flask</span>
+        <span>FastAPI</span>
+        <span>Streamlit</span>
+        <span>Azure</span>
+        <span>Azure Machine Learning</span>
+        <span>Claude</span>
+        <span>Power BI</span>
+        <span>Git</span>
+        <span>JIRA</span>
+    </div>
+</section>
 
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="timeline-date">MARCH 2026 — PRESENT</div>
-                <div class="timeline-company">DXC Technology</div>
-                <div class="timeline-role">Associate Manager - Data Scientist</div>
-                <div class="timeline-description">
-                    Leading end-to-end ML initiatives including fraud detection, risk scoring, recommendation systems, and behavioral analytics. 
-                    Building LLM-powered applications with RAG pipelines, document-based chatbots, and NLP solutions including translation systems. 
-                    Implementing explainable AI (SHAP, LIME) for regulatory compliance and deploying modular AI architectures on on-premise infrastructure.
-                </div>
-                <div class="timeline-highlights">
-                    <span class="highlight-tag">ML Pipeline Development</span>
-                    <span class="highlight-tag">LLM & RAG Systems</span>
-                    <span class="highlight-tag">Explainable AI</span>
-                    <span class="highlight-tag">Team Mentorship</span>
-                </div>
-            </div>
+<section id="projects">
+    <h2 class="section-title">Projects</h2>
 
-            <div class="timeline-item">
-                <div class="timeline-date">JULY 2024 — FEBRUARY 2026</div>
-                <div class="timeline-company">Cognizant Technology Solutions</div>
-                <div class="timeline-role">Engineering Manager – AI/ML Developer</div>
-                <div class="timeline-description">
-                    Led AI/ML delivery for enterprise clients including banking, retail, and operations domains. Developed JIRA story point estimation models, 
-                    loan recommendation systems, and invoice automation. Built compliant AI systems using Flask, Hugging Face, and on-premise deployment. 
-                    Created intelligent chatbots with document analysis capabilities and curriculum-aligned Q&A using NLP and prompt engineering.
-                </div>
-                <div class="timeline-highlights">
-                    <span class="highlight-tag">Enterprise AI Architecture</span>
-                    <span class="highlight-tag">Team Leadership</span>
-                    <span class="highlight-tag">Chatbot Development</span>
-                    <span class="highlight-tag">SAFe Scrum Master</span>
-                </div>
-            </div>
+    <div class="card">
+        <h3>RoadRadar Speed Detection System</h3>
+        <p>Computer vision system for vehicle speed detection using OpenCV and YOLO.</p>
+        <a href="https://github.com/RajKumaar123/RoadRadar-Real-Time-Speed-Detection-System">GitHub Link</a>
+    </div>
 
-            <div class="timeline-item">
-                <div class="timeline-date">OCTOBER 2017 — JUNE 2024</div>
-                <div class="timeline-company">Cognizant Technology Solutions</div>
-                <div class="timeline-role">Sr. Associate - Projects / Technical Lead</div>
-                <div class="timeline-description">
-                    Tech Lead for AI/ML initiatives across UK banking clients (Lloyds, Halifax, BOS, TSB, RBS/NatWest). Led predictive analytics, 
-                    OCR enhancement, and real-time fraud detection systems. Architected secure, modular AI solutions with Flask and on-premise infrastructure. 
-                    Mentored developers in ML best practices. Built custom AI chatbots for banking, agriculture, tourism domains using LLM pipelines.
-                </div>
-                <div class="timeline-highlights">
-                    <span class="highlight-tag">London Onsite (2018-2021)</span>
-                    <span class="highlight-tag">UK Banking Clients</span>
-                    <span class="highlight-tag">AI/ML Architecture</span>
-                    <span class="highlight-tag">Technical Mentorship</span>
-                </div>
-            </div>
+    <div class="card">
+        <h3>SmartLendXAI Lending Decision System</h3>
+        <p>Explainable AI system for lending decisions and credit risk prediction.</p>
+        <a href="https://github.com/RajKumaar123/SmartLendXAI-AI-Powered-Lending-Decisions-for-Early-Stage-Retailers">GitHub Link</a>
+    </div>
 
-            <div class="timeline-item">
-                <div class="timeline-date">NOVEMBER 2013 — SEPTEMBER 2017</div>
-                <div class="timeline-company">Cognizant Technology Solutions</div>
-                <div class="timeline-role">Associate - Projects</div>
-                <div class="timeline-description">
-                    Technology specialist focused on AS400 systems, architecture, design, and modernization. Supported technology assessments, 
-                    system upgrades, migration projects, and re-engineering initiatives. Contributed to legacy system transformation while 
-                    maintaining operational stability.
-                </div>
-                <div class="timeline-highlights">
-                    <span class="highlight-tag">System Modernization</span>
-                    <span class="highlight-tag">AS400 Expertise</span>
-                    <span class="highlight-tag">Migration Projects</span>
-                </div>
-            </div>
+    <div class="card">
+        <h3>Angika Low Resource Translator</h3>
+        <p>NLP system for low-resource language translation and content generation.</p>
+        <a href="https://github.com/RajKumaar123/Angika-LowResource-Translator">GitHub Link</a>
+    </div>
 
-            <div class="timeline-item">
-                <div class="timeline-date">FEBRUARY 2012 — OCTOBER 2013</div>
-                <div class="timeline-company">Cognizant Technology Solutions</div>
-                <div class="timeline-role">Programmer Analyst</div>
-                <div class="timeline-description">
-                    Developed and implemented project components per client requirements. Created fault-tolerant code with comprehensive 
-                    unit testing. Delivered high-quality solutions within tight timelines while adhering to security and performance standards.
-                </div>
-            </div>
+</section>
 
-            <div class="timeline-item">
-                <div class="timeline-date">JANUARY 2011 — JANUARY 2012</div>
-                <div class="timeline-company">Cognizant Technology Solutions</div>
-                <div class="timeline-role">Programmer Analyst Trainee</div>
-                <div class="timeline-description">
-                    Foundation training in software development, client project delivery, and enterprise development practices.
-                </div>
-            </div>
-        </div>
-    </section>
+<section id="research">
+    <h2 class="section-title">Research & Publications</h2>
+    <div class="card">
+        <p>Explainable Sentiment Analysis – ICIEM 2023</p>
+        <p>NMT for Endangered Languages – IIT Patna 2023</p>
+        <p>Generative AI for Drug Recommendations – IIT Kharagpur 2024</p>
+        <p>LLMs & DPT Models – NIT Patna 2024</p>
+        <p>Facial Image Encryption with DCGANs – IIT Jodhpur</p>
+    </div>
+</section>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <div class="section-header">
-            <div class="section-label">Portfolio</div>
-            <h2 class="section-title">Featured Projects</h2>
-            <p class="section-description">
-                Production-grade AI systems spanning computer vision, NLP, LLMs, and banking ML applications.
-            </p>
-        </div>
+<section id="medium">
+    <h2 class="section-title">Medium Articles</h2>
+    <div class="card">
+        <p>Writing articles on Data Science, Machine Learning, Generative AI, Data Engineering, and AI Architecture.</p>
+        <a href="https://medium.com/@er.rajkumaar">Visit Medium Profile</a>
+    </div>
+</section>
 
-        <div class="projects-grid">
-            <div class="project-card">
-                <div class="project-header">
-                    <div class="project-category">NLP • Low-Resource Languages • Gen AI</div>
-                    <h3 class="project-title">Angika GPT - Multilingual Content Generation</h3>
-                    <p class="project-description">
-                        Custom Language Model for Angika, a low-resource Indian language. Built using Hugging Face Transformers 
-                        for translation and content generation, promoting digital preservation and language accessibility.
-                    </p>
-                </div>
-                <div class="project-body">
-                    <div class="project-tech">
-                        <span class="tech-tag">Transformers</span>
-                        <span class="tech-tag">Hugging Face</span>
-                        <span class="tech-tag">NMT</span>
-                        <span class="tech-tag">PyTorch</span>
-                        <span class="tech-tag">Low-Resource NLP</span>
-                    </div>
-                    <a href="http://www.angikaGPT.com" class="project-link" target="_blank">
-                        Visit Project →
-                    </a>
-                </div>
-            </div>
+<section id="education">
+    <h2 class="section-title">Education & Certifications</h2>
+    <div class="card">
+        <p><b>M.Tech – Data & Computational Science</b> – IIT Jodhpur</p>
+        <p><b>B.Tech – Computer Science</b> – Rajasthan Technical University</p>
+        <p><b>Certification:</b> SAFe Scrum Master</p>
+    </div>
+</section>
 
-            <div class="project-card">
-                <div class="project-header">
-                    <div class="project-category">Banking ML • Enterprise AI</div>
-                    <h3 class="project-title">JIRA Estimation & Risk Prediction</h3>
-                    <p class="project-description">
-                        ML model predicting story points, impacted components, and risk levels using historical JIRA data and NLP. 
-                        Improved sprint planning accuracy by 20% through intelligent estimation.
-                    </p>
-                </div>
-                <div class="project-body">
-                    <div class="project-tech">
-                        <span class="tech-tag">Scikit-learn</span>
-                        <span class="tech-tag">NLP</span>
-                        <span class="tech-tag">JIRA API</span>
-                        <span class="tech-tag">Python</span>
-                    </div>
-                </div>
-            </div>
+<section id="contact">
+    <h2 class="section-title">Contact</h2>
+    <div class="card">
+        <p>Email: your_email@gmail.com</p>
+        <p>LinkedIn: linkedin.com/in/rajkumaar123</p>
+        <p>GitHub: github.com/RajKumaar123</p>
+        <p>Medium: medium.com/@er.rajkumaar</p>
+    </div>
+</section>
 
-            <div class="project-card">
-                <div class="project-header">
-                    <div class="project-category">LLM • RAG • Document Processing</div>
-                    <h3 class="project-title">Smart Invoice Query Assistant</h3>
-                    <p class="project-description">
-                        Real-time assistant using LangChain and RAG for invoice-related queries. Integrated document loaders, 
-                        chunking, embeddings, and vector search (FAISS/Pinecone) for fast, accurate responses.
-                    </p>
-                </div>
-                <div class="project-body">
-                    <div class="project-tech">
-                        <span class="tech-tag">LangChain</span>
-                        <span class="tech-tag">RAG</span>
-                        <span class="tech-tag">FAISS</span>
-                        <span class="tech-tag">Pinecone</span>
-                        <span class="tech-tag">OpenAI</span>
-                    </div>
-                </div>
-            </div>
+<footer>
+    <p>© 2026 Raj Kumar | AI/ML Portfolio</p>
+</footer>
 
-            <div class="project-card">
-                <div class="project-header">
-                    <div class="project-category">Computer Vision • Deep Learning</div>
-                    <h3 class="project-title">OCR Automation for Finance</h3>
-                    <p class="project-description">
-                        Enhanced invoice and cheque OCR pipeline using deep learning for handwritten and printed text recognition. 
-                        Reduced manual processing by 25% through improved accuracy.
-                    </p>
-                </div>
-                <div class="project-body">
-                    <div class="project-tech">
-                        <span class="tech-tag">OpenCV</span>
-                        <span class="tech-tag">Tesseract</span>
-                        <span class="tech-tag">Deep Learning</span>
-                        <span class="tech-tag">Image Processing</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-header">
-                    <div class="project-category">ML • Real-Time Systems</div>
-                    <h3 class="project-title">Real-Time Anomaly Monitoring Dashboard</h3>
-                    <p class="project-description">
-                        Predictive alert dashboard with real-time updates, anomaly detection, and visual trends. 
-                        Cut incident response time by 30% through proactive monitoring.
-                    </p>
-                </div>
-                <div class="project-body">
-                    <div class="project-tech">
-                        <span class="tech-tag">Power BI</span>
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Anomaly Detection</span>
-                        <span class="tech-tag">Real-Time</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-header">
-                    <div class="project-category">Computer Vision • Safety Systems</div>
-                    <h3 class="project-title">Thermal Video Red Zone Detection</h3>
-                    <p class="project-description">
-                        Thermal imaging analysis system for detecting high-temperature zones and generating real-time alerts 
-                        for industrial safety applications.
-                    </p>
-                </div>
-                <div class="project-body">
-                    <div class="project-tech">
-                        <span class="tech-tag">OpenCV</span>
-                        <span class="tech-tag">Computer Vision</span>
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Real-Time Alerts</span>
-                    </div>
-                    <a href="https://github.com/RajKumaar123/Thermal-Video-Red-Zone-Detection-and-Alerting-System" class="project-link" target="_blank">
-                        View on GitHub →
-                    </a>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-header">
-                    <div class="project-category">Computer Vision • Video Processing</div>
-                    <h3 class="project-title">Video Data Processing with Python & OpenCV</h3>
-                    <p class="project-description">
-                        Comprehensive video analysis toolkit for processing, analyzing, and extracting insights from video streams 
-                        using computer vision techniques.
-                    </p>
-                </div>
-                <div class="project-body">
-                    <div class="project-tech">
-                        <span class="tech-tag">OpenCV</span>
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Video Processing</span>
-                        <span class="tech-tag">Analysis</span>
-                    </div>
-                    <a href="https://github.com/RajKumaar123/Video-Data-Processing-with-Python-and-OpenCV" class="project-link" target="_blank">
-                        View on GitHub →
-                    </a>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-header">
-                    <div class="project-category">Computer Vision • Traffic Monitoring</div>
-                    <h3 class="project-title">RoadRadar - Real-Time Speed Detection</h3>
-                    <p class="project-description">
-                        Real-time vehicle speed detection and alerting system using YOLOv8 and OpenCV for traffic monitoring 
-                        and enforcement applications.
-                    </p>
-                </div>
-                <div class="project-body">
-                    <div class="project-tech">
-                        <span class="tech-tag">YOLOv8</span>
-                        <span class="tech-tag">OpenCV</span>
-                        <span class="tech-tag">Real-Time</span>
-                        <span class="tech-tag">Object Detection</span>
-                    </div>
-                    <a href="https://github.com/RajKumaar123/RoadRadar-Real-Time-Speed-Detection-System" class="project-link" target="_blank">
-                        View on GitHub →
-                    </a>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-header">
-                    <div class="project-category">FinTech • Explainable AI</div>
-                    <h3 class="project-title">SmartLendXAI - AI-Powered Lending</h3>
-                    <p class="project-description">
-                        Personalized AI lending platform for early-stage retailers with explainable AI integration for transparent 
-                        credit risk modeling and regulatory compliance.
-                    </p>
-                </div>
-                <div class="project-body">
-                    <div class="project-tech">
-                        <span class="tech-tag">XAI</span>
-                        <span class="tech-tag">SHAP</span>
-                        <span class="tech-tag">Credit Scoring</span>
-                        <span class="tech-tag">Flask</span>
-                    </div>
-                    <a href="https://github.com/RajKumaar123/SmartLendXAI-AI-Powered-Lending-Decisions-for-Early-Stage-Retailers" class="project-link" target="_blank">
-                        View on GitHub →
-                    </a>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-header">
-                    <div class="project-category">NLP • Translation</div>
-                    <h3 class="project-title">Angika Low-Resource Translator</h3>
-                    <p class="project-description">
-                        Neural machine translation system specifically designed for Angika, addressing the challenges of 
-                        low-resource language translation with custom corpus development.
-                    </p>
-                </div>
-                <div class="project-body">
-                    <div class="project-tech">
-                        <span class="tech-tag">NMT</span>
-                        <span class="tech-tag">Transformers</span>
-                        <span class="tech-tag">Low-Resource NLP</span>
-                        <span class="tech-tag">PyTorch</span>
-                    </div>
-                    <a href="https://github.com/RajKumaar123/Angika-LowResource-Translator" class="project-link" target="_blank">
-                        View on GitHub →
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills">
-        <div class="section-header">
-            <div class="section-label">Technical Expertise</div>
-            <h2 class="section-title">Core Competencies</h2>
-        </div>
-
-        <div class="skills-grid">
-            <div class="skill-category">
-                <h3 class="skill-category-title">
-                    <span class="skill-icon">🤖</span>
-                    LLMs & Generative AI
-                </h3>
-                <div class="skill-list">
-                    <div class="skill-item">
-                        <span class="skill-name">OpenAI GPT-4 / Claude AI</span>
-                        <span class="skill-level">EXPERT</span>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">RAG Architectures</span>
-                        <span class="skill-level">EXPERT</span>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">LangChain / LlamaIndex</span>
-                        <span class="skill-level">EXPERT</span>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">Prompt Engineering</span>
-                        <span class="skill-level">EXPERT</span>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">Hugging Face Transformers</span>
-                        <span class="skill-level">EXPERT</span>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">Fine-tuning LLMs</span>
-                        <span class="skill-level">ADVANCED</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="skill-category">
-                <h3 class="skill-category-title">
-                    <span class="skill-icon">📚</span>
-                    Natural Language Processing
-                </h3>
-                <div class="skill-list">
-                    <div class="skill-item">
-                        <span class="skill-name">NER & Text Classification</span>
-                        <span class="skill-level">EXPERT</span>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">Sentiment Analysis</span>
-                        <span class="skill-level">EXPERT</span>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">Machine Translation (NMT)</span>
-                        <span class="skill-level">EXPERT</span>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">Semantic Search</span>
-                        <span class="skill-level">ADVANCED</span>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">Multilingual NLP</span>
-                        <span class="skill-level">EXPERT</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="skill-category">
-                <h3 class="skill-category-title">
-                    <span class="skill-icon">📈</span>
-                    Machine Learning
-                </h3>
-                <div class="skill-list">
-                    <div class="skill-item">
-                        <span class="skill-name">Scikit-learn</span>
-                        <span class="skill-level">EXPERT</span>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">XGBoost / LightGBM</span>
-                        <span class="skill-level">EXPERT</span>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">Time Series (ARIMA, LSTM)</span>
-                        <span class="skill-level">EXPERT</span>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">Feature Engineering</span>
-                        <span class="skill-level">EXPERT</span>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">Ensemble Methods</span>
-                        <span class="skill-level">ADVANCED</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="skill-category">
-                <h3 class="skill-category-title">
-                    <span class="skill-icon">🎥</span>
-                    Computer Vision
-                </h3>
-                <div class="skill-list">
-                    <div class="skill-item">
-                        <span class="skill-name">OpenCV</span>
-                        <span class="skill-level">EXPERT</span>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">YOLO / Object Detection</span>
-                        <span class="skill-level">EXPERT</span>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">OCR (Tesseract)</span>
-                        <span class="skill-level">EXPERT</span>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">GANs & Diffusion Models</span>
-                        <span class="skill-level">ADVANCED</span>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">Image Processing</span>
-                        <span class="skill-level">EXPERT</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="skill-category">
-                <h3 class="skill-category-title">
-                    <span class="skill-icon">🧠</span>
-                    Deep Learning
-                </h3>
-                <div class="skill-list">
-                    <div class="skill-item">
-                        <span class="skill-name">PyTorch</span>
-                        <span class="skill-level">EXPERT</span>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">TensorFlow / Keras</span>
-                        <span class="skill-level">ADVANCED</span>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">CNNs & RNNs</span>
-                        <span class="skill-level">EXPERT</span>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">Transfer Learning</span>
-                        <span class="skill-level">EXPERT</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="skill-category">
-                <h3 class="skill-category-title">
-                    <span class="skill-icon">💾</span>
-                    Data & Databases
-                </h3>
-                <div class="skill-list">
-                    <div class="skill-item">
-                        <span class="skill-name">Python (Pandas, NumPy)</span>
-                        <span class="skill-level">EXPERT</span>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">SQL (MySQL, PostgreSQL)</span>
-                        <span class="skill-level">EXPERT</span>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">Vector DBs (FAISS, Pinecone)</span>
-                        <span class="skill-level">EXPERT</span>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">Data Visualization</span>
-                        <span class="skill-level">EXPERT</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="skill-category">
-                <h3 class="skill-category-title">
-                    <span class="skill-icon">🚀</span>
-                    MLOps & Deployment
-                </h3>
-                <div class="skill-list">
-                    <div class="skill-item">
-                        <span class="skill-name">Flask / FastAPI</span>
-                        <span class="skill-level">EXPERT</span>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">Streamlit</span>
-                        <span class="skill-level">EXPERT</span>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">Docker / Kubernetes</span>
-                        <span class="skill-level">INTERMEDIATE</span>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">Azure ML / Azure Cloud</span>
-                        <span class="skill-level">INTERMEDIATE</span>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">Model Packaging</span>
-                        <span class="skill-level">EXPERT</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="skill-category">
-                <h3 class="skill-category-title">
-                    <span class="skill-icon">🏦</span>
-                    Banking & Finance Domain
-                </h3>
-                <div class="skill-list">
-                    <div class="skill-item">
-                        <span class="skill-name">Fraud Detection</span>
-                        <span class="skill-level">EXPERT</span>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">Credit Risk Modeling</span>
-                        <span class="skill-level">EXPERT</span>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">Explainable AI (XAI)</span>
-                        <span class="skill-level">EXPERT</span>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">Regulatory Compliance</span>
-                        <span class="skill-level">ADVANCED</span>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">Financial Analytics</span>
-                        <span class="skill-level">EXPERT</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="skill-category">
-                <h3 class="skill-category-title">
-                    <span class="skill-icon">👥</span>
-                    Leadership & Agile
-                </h3>
-                <div class="skill-list">
-                    <div class="skill-item">
-                        <span class="skill-name">SAFe Scrum Master</span>
-                        <span class="skill-level">CERTIFIED</span>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">Team Leadership</span>
-                        <span class="skill-level">EXPERT</span>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">Sprint Planning</span>
-                        <span class="skill-level">EXPERT</span>
-                    </div>
-                    <div class="skill-item">
-                        <span class="skill-name">Technical Mentorship</span>
-                        <span class="skill-level">EXPERT</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Medium Articles Section -->
-    <section id="medium">
-        <div class="section-header">
-            <div class="section-label">Technical Writing</div>
-            <h2 class="section-title">Medium Articles</h2>
-            <p class="section-description">
-                Practical guides on data manipulation, ML in banking, and production AI systems. 
-                14-part series covering everything from categorical encoding to time series operations.
-            </p>
-        </div>
-
-        <div class="medium-grid">
-            <div class="medium-card">
-                <h3 class="medium-title">Data Manipulation in the Real World</h3>
-                <div class="medium-meta">Part 1 • Foundational Series</div>
-                <p class="medium-description">
-                    Why business decisions, risk models, and AI systems fail long before the model does. 
-                    Introduction to the comprehensive 14-part series on data manipulation.
-                </p>
-                <a href="https://medium.com/@er.rajkumaar/data-manipulation-in-the-real-world-3df026bf32e3" class="medium-link" target="_blank">
-                    Read on Medium →
-                </a>
-            </div>
-
-            <div class="medium-card">
-                <h3 class="medium-title">Part 14: Categorical Data Management</h3>
-                <div class="medium-meta">Latest Article • 2025</div>
-                <p class="medium-description">
-                    How category encoding and label handling influence bias and model stability in production ML systems.
-                </p>
-                <a href="https://medium.com/@er.rajkumaar/part-14-data-manipulation-in-categorical-data-management-6b3d87ee5b23" class="medium-link" target="_blank">
-                    Read on Medium →
-                </a>
-            </div>
-
-            <div class="medium-card">
-                <h3 class="medium-title">Part 13: Time Series Operations</h3>
-                <div class="medium-meta">Data Manipulation Series • 2025</div>
-                <p class="medium-description">
-                    How resampling, alignment, and frequency decisions affect forecast accuracy in banking applications.
-                </p>
-                <a href="https://medium.com/@er.rajkumaar/part-13-data-manipulation-in-time-series-operations-004b131f5042" class="medium-link" target="_blank">
-                    Read on Medium →
-                </a>
-            </div>
-
-            <div class="medium-card">
-                <h3 class="medium-title">AI & Machine Learning Knowledge Hub</h3>
-                <div class="medium-meta">Resource Collection • 2024</div>
-                <p class="medium-description">
-                    Practical guides, projects, and real-world applications—comprehensive resource for banking ML and data science.
-                </p>
-                <a href="https://medium.com/@er.rajkumaar/ai-machine-learning-knowledge-hub-by-raj-kumar-practical-guides-projects-and-real-world-40741234640b" class="medium-link" target="_blank">
-                    Visit Hub →
-                </a>
-            </div>
-
-            <div class="medium-card">
-                <h3 class="medium-title">Part 12: Window Functions & Rolling Calculations</h3>
-                <div class="medium-meta">Data Manipulation Series • 2024</div>
-                <p class="medium-description">
-                    How trend-based metrics power risk monitoring and behavioral analytics in financial systems.
-                </p>
-                <a href="https://medium.com/@er.rajkumaar" class="medium-link" target="_blank">
-                    Read on Medium →
-                </a>
-            </div>
-
-            <div class="medium-card">
-                <h3 class="medium-title">All Medium Articles</h3>
-                <div class="medium-meta">Complete Collection</div>
-                <p class="medium-description">
-                    View all technical articles, tutorials, and insights on data science, ML, and AI applications in banking.
-                </p>
-                <a href="https://medium.com/@er.rajkumaar" class="medium-link" target="_blank">
-                    Visit Medium Profile →
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Research Section -->
-    <section id="research">
-        <div class="section-header">
-            <div class="section-label">Academic Contributions</div>
-            <h2 class="section-title">Research Papers & Presentations</h2>
-            <p class="section-description">
-                Published research spanning NLP, computer vision, explainable AI, and generative models.
-            </p>
-        </div>
-
-        <div class="research-list">
-            <div class="research-item">
-                <h3 class="research-title">Facial Image Encryption using Deep Convolutional GANs</h3>
-                <div class="research-meta">M.Tech Project • IIT Jodhpur • 2023</div>
-                <p class="research-description">
-                    Research exploring privacy-preserving techniques for biometric systems using generative adversarial networks. 
-                    Developed novel encryption methods for facial images while maintaining visual quality and secure decryption mechanisms.
-                </p>
-            </div>
-
-            <div class="research-item">
-                <h3 class="research-title">Neural Machine Translation for Endangered Languages: A Case Study of Angika</h3>
-                <div class="research-meta">Conference Paper • IIT Patna • 2023</div>
-                <p class="research-description">
-                    Presented approaches for building NMT systems for low-resource languages. Addressed challenges in corpus development, 
-                    model training, and evaluation for endangered Indian languages with limited digital presence.
-                </p>
-            </div>
-
-            <div class="research-item">
-                <h3 class="research-title">Explainable Sentiment Analysis for Financial News</h3>
-                <div class="research-meta">ICIEM 2023</div>
-                <p class="research-description">
-                    Research on interpretable sentiment analysis models for financial news, combining deep learning with 
-                    explainability techniques (SHAP, LIME) for regulatory compliance.
-                </p>
-            </div>
-
-            <div class="research-item">
-                <h3 class="research-title">Generative AI for Drug Recommendations</h3>
-                <div class="research-meta">SHADG 2024 • IIT Kharagpur</div>
-                <p class="research-description">
-                    Exploring applications of generative AI in pharmaceutical recommendations and personalized medicine.
-                </p>
-            </div>
-
-            <div class="research-item">
-                <h3 class="research-title">LLMs & DPT Models for Sentiment Analysis</h3>
-                <div class="research-meta">NIT Patna • 2024</div>
-                <p class="research-description">
-                    Comparative study of Large Language Models and Deep Pre-trained Transformers for sentiment analysis tasks.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Education Section -->
-    <section id="education">
-        <div class="section-header">
-            <div class="section-label">Academic Background</div>
-            <h2 class="section-title">Education & Certifications</h2>
-        </div>
-
-        <div class="education-grid">
-            <div class="education-card">
-                <div class="education-degree">M.Tech in Data & Computational Science</div>
-                <div class="education-institution">Indian Institute of Technology (IIT) Jodhpur</div>
-                <div class="education-year">October 2021 — October 2023</div>
-                <div class="education-grade">CGPA: 7.74 / 10.0</div>
-            </div>
-
-            <div class="education-card">
-                <div class="education-degree">B.Tech in Computer Science & Engineering</div>
-                <div class="education-institution">Rajasthan Technical University (RTU)</div>
-                <div class="education-year">2006 — 2010</div>
-                <div class="education-grade">68%</div>
-            </div>
-
-            <div class="education-card">
-                <div class="education-degree">Certified SAFe® Scrum Master</div>
-                <div class="education-institution">Scaled Agile, Inc.</div>
-                <div class="education-year">Issued March 2025</div>
-                <div class="education-grade">Credential ID: 48725598-4060</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="section-header">
-            <div class="section-label">Get in Touch</div>
-            <h2 class="section-title">Let's Collaborate</h2>
-            <p class="section-description">
-                Open to opportunities in AI/ML leadership, banking technology, and collaborative research. 
-                Let's build something impactful together.
-            </p>
-        </div>
-
-        <div class="contact-content">
-            <div class="contact-info">
-                <h3>Collaboration Areas</h3>
-                <p style="color: var(--text-light); line-height: 1.8;">
-                    <strong>Banking & FinTech ML:</strong> Fraud detection, credit risk, regulatory compliance<br>
-                    <strong>LLM Applications:</strong> RAG systems, chatbots, document processing<br>
-                    <strong>Low-Resource NLP:</strong> Multilingual models, language preservation<br>
-                    <strong>Explainable AI:</strong> Transparent models for regulated industries<br>
-                    <strong>Computer Vision:</strong> OCR, video analytics, real-time systems
-                </p>
-            </div>
-
-            <div class="contact-links">
-                <a href="mailto:er.rajkumaar@gmail.com" class="contact-item">
-                    <div class="contact-icon">✉</div>
-                    <div>
-                        <div style="font-weight: 600; color: var(--primary);">Email</div>
-                        <div style="font-size: 0.9rem;">er.rajkumaar@gmail.com</div>
-                    </div>
-                </a>
-
-                <a href="https://www.linkedin.com/in/rajkumaar123/" class="contact-item" target="_blank">
-                    <div class="contact-icon">in</div>
-                    <div>
-                        <div style="font-weight: 600; color: var(--primary);">LinkedIn</div>
-                        <div style="font-size: 0.9rem;">linkedin.com/in/rajkumaar123</div>
-                    </div>
-                </a>
-
-                <a href="https://github.com/RajKumaar123" class="contact-item" target="_blank">
-                    <div class="contact-icon">{ }</div>
-                    <div>
-                        <div style="font-weight: 600; color: var(--primary);">GitHub</div>
-                        <div style="font-size: 0.9rem;">github.com/RajKumaar123</div>
-                    </div>
-                </a>
-
-                <a href="https://medium.com/@er.rajkumaar" class="contact-item" target="_blank">
-                    <div class="contact-icon">M</div>
-                    <div>
-                        <div style="font-weight: 600; color: var(--primary);">Medium</div>
-                        <div style="font-size: 0.9rem;">medium.com/@er.rajkumaar</div>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2026 Raj Kumar | M.Tech Data Science (IIT Jodhpur) | Pune, Maharashtra, India</p>
-        <p style="margin-top: 0.5rem; font-size: 0.85rem;">Built with precision • AI is about accessibility, ethics, and trust-driven innovation</p>
-    </footer>
-
-    <script>
-        // Smooth scrolling
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-
-        // Scroll animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.project-card, .skill-category, .medium-card, .research-item, .timeline-item, .education-card').forEach(el => {
-            el.style.opacity = '0';
-            el.style.transform = 'translateY(30px)';
-            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-            observer.observe(el);
-        });
-    </script>
 </body>
 </html>
